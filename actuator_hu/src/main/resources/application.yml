@@ -1,0 +1,12 @@
+server:
+  port: 8081
+#暴漏所有断点（默认只暴漏health和info）如果想指定具体的端点，可以使用,进行分割（如：health,info,beans）
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      #  路径信息，默认为actuator
+      base-path: /qudehu
+      #  默认就是开启的
+    enabled-by-default: true
