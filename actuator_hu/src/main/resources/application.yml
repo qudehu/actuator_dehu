@@ -1,5 +1,7 @@
 server:
   port: 8081
+# 需要设置web服务器的关闭方式，默认是立即关闭，需要修改为优雅关闭
+  shutdown: graceful
 #暴漏所有断点（默认只暴漏health和info）如果想指定具体的端点，可以使用,进行分割（如：health,info,beans）
 management:
   endpoints:
