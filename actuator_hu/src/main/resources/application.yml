@@ -10,3 +10,20 @@ management:
       base-path: /qudehu
       #  默认就是开启的
     enabled-by-default: true
+  #    显示所有的健康状态
+  endpoint:
+    health:
+      show-details: always
+
+# 配置数据源方便查看数据库连接状态
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/swtest?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 配置日志信息，方便后续查看日志信息
+logging:
+  file:
+    name: D:/logs/application.log
