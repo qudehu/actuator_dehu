@@ -38,3 +38,25 @@ build/
 .DS_Store
 
 .idea
+
+.mvn/
+.mvn/wrapper/
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+.project
+.classpath
+.factorypath
+.settings
+.springBeans
+
+.idea/
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+
+.gitignore
+
+.vscode/
