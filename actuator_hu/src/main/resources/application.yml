@@ -1,6 +1,6 @@
 server:
   port: 8081
-# 需要设置web服务器的关闭方式，默认是立即关闭，需要修改为优雅关闭
+  # 需要设置web服务器的关闭方式，默认是立即关闭，需要修改为优雅关闭
   shutdown: graceful
 #暴漏所有断点（默认只暴漏health和info）如果想指定具体的端点，可以使用,进行分割（如：health,info,beans）
 management:
@@ -24,6 +24,11 @@ spring:
     password: root
     url: jdbc:mysql://localhost:3306/swtest?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
+  boot:
+    admin:
+      client:
+        #指定服务端地址
+        url: http://localhost:8082
 
 # 配置日志信息，方便后续查看日志信息
 logging:
