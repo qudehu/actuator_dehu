@@ -1,2 +1,9 @@
 server:
-    port: 8082
+  port: 8082
+
+# 配置用户名密码
+spring:
+  security:
+    user:
+      name: qudehu
+      password: qudehu

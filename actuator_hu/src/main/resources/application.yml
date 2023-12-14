@@ -29,8 +29,11 @@ spring:
       client:
         #指定服务端地址
         url: http://localhost:8082
+        username: qudehu
+        password: qudehu
 
 # 配置日志信息，方便后续查看日志信息
 logging:
   file:
     name: D:/logs/application.log
+
