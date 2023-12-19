@@ -1,4 +1,4 @@
-package com.dehu.actuator_hu.nedpoint;
+package com.dehu.actuator_hu.endpoint;
 
 
 import org.springframework.boot.actuate.health.AbstractHealthIndicator;
