@@ -37,3 +37,10 @@ logging:
   file:
     name: D:/logs/application.log
 
+info:
+  appName: spring-boot-admin
+  version: 1.0.0
+  description: spring-boot-admin-server
+#  通过maven的数据进行展示
+  mavenAppName: @project.artifactId@
+  mavenAppVersion: @project.version@
